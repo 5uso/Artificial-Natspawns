@@ -6,7 +6,7 @@ scoreboard players set #135 suso.nats 135
 scoreboard players set #1000 suso.nats 1000
 scoreboard players set #36000 suso.nats 36000
 
-execute unless score $frequency suso.nats matches 1.. run scoreboard players set $frequency suso.nats 5
+execute unless score $period suso.nats matches 1.. run scoreboard players set $period suso.nats 5
 execute unless score $repeat suso.nats matches 1.. run scoreboard players set $repeat suso.nats 10
 execute unless score $cap suso.nats matches 1.. run scoreboard players set $cap suso.nats 70
 
