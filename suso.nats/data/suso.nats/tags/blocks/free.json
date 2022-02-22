@@ -172,16 +172,16 @@
         "minecraft:yellow_banner",
         "minecraft:yellow_carpet",
         "minecraft:yellow_wall_banner",
-		"minecraft:spore_blossom",
-		"minecraft:moss_carpet",
-		"minecraft:small_dripleaf",
-		"minecraft:light",
-		"minecraft:hanging_roots",
-		"minecraft:glow_lichen",
-		"minecraft:big_dripleaf_stem",
-		"minecraft:cave_vines",
-		"minecraft:air",
-		"minecraft:cave_air",
-		"minecraft:void_air"
+        "minecraft:spore_blossom",
+        "minecraft:moss_carpet",
+        "minecraft:small_dripleaf",
+        "minecraft:light",
+        "minecraft:hanging_roots",
+        "minecraft:glow_lichen",
+        "minecraft:big_dripleaf_stem",
+        "minecraft:cave_vines",
+        "minecraft:air",
+        "minecraft:cave_air",
+        "minecraft:void_air"
     ]
 }
