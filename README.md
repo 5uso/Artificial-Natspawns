@@ -21,6 +21,10 @@ To enable custom spawning, set score `$enable suso.nats` to 1.
 - Tag `suso.nats.count` will make this entity count towards the mob cap. You most likely want to add this tag to every mob that spawns from the system.
 - Tag `suso.nats.no` is used on players and will cause the system to ignore them. The system also ignores any players in spectator mode, regardless of tags.
 
+### Block tags
+- Tag `suso.nats:solid` determines which blocks are considered ground. Mobs may spawn on these.
+- Tag `suso.nats:free` determines which blocks are "air". Mobs may spawn within these.
+
 ### Changing default distances
 The system comes configured to spawn mobs in a sphere around players, from 27 to 120 blocks of distance. Ground mobs don't spawn on the exact location the system initially chooses in this range, since we iterate vertically to find the ground (Y±5).
 
