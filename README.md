@@ -25,14 +25,6 @@ To enable custom spawning, set score `$enable suso.nats` to 1.
 - Tag `suso.nats:solid` determines which blocks are considered ground. Mobs may spawn on these.
 - Tag `suso.nats:free` determines which blocks are "air". Mobs may spawn within these.
 
-### Changing default distances
-The system comes configured to spawn mobs in a sphere around players, from 27 to 120 blocks of distance. Ground mobs don't spawn on the exact location the system initially chooses in this range, since we iterate vertically to find the ground (Y±5).
-
-In order to make distance selection as fast as possible, it's implemented with a hardcoded binary search whose functions are generated with a python script included in this repo `suso.nats/data/suso.nats/functions/pos_search/generate.py`. To change the spawn distances, you will need to edit three values at the top of this file and run it to regenerate the functions:
-- `BITS` determines the resolution/precision of the search. The distance range will be divided in 2^BITS steps. Increasing this value will increase the number of functions generated and the amount of score checks at runtime. By default it's set to 5 (32 steps).
-- `MIN_DIST` is the minimum distance spawn attempts will happen at. By default it's set to 27.
-- `MAX_DIST` is the maximum distance spawn attempts will happen at. By default it's set to 120.
-
 ### Adding custom spawns
 And now, for the fun part. Adding custom spawns isn't very difficult, but it requires some thought (especially to keep the amount of checks and rng calls low).
 
@@ -90,5 +82,14 @@ execute if score $rng suso.nats matches 525.. run summon zombified_piglin ~ ~ ~ 
 ```mcfunction
 summon cat ~ ~ ~ {CatType:9,Tags:["suso.nats.count"]}
 ```
+
+### Changing default distances
+The system comes configured to spawn mobs in a sphere around players, from 27 to 120 blocks of distance. Ground mobs don't spawn on the exact location the system initially chooses in this range, since we iterate vertically to find the ground (Y±5).
+
+In order to make distance selection as fast as possible, it's implemented with a hardcoded binary search whose functions are generated with a python script included in this repo `suso.nats/data/suso.nats/functions/pos_search/generate.py`. To change the spawn distances, you will need to edit three values at the top of this file and run it to regenerate the functions:
+- `BITS` determines the resolution/precision of the search. The distance range will be divided in 2^BITS steps. Increasing this value will increase the number of functions generated and the amount of score checks at runtime. By default it's set to 5 (32 steps).
+- `MIN_DIST` is the minimum distance spawn attempts will happen at. By default it's set to 27.
+- `MAX_DIST` is the maximum distance spawn attempts will happen at. By default it's set to 120.
+
 
 ###### Disclaimer: There is, most likely, an end to the possibilities. Crowdford is not responsible for any damages caused by actions or inactions resulting from any misinterpretations of the statements contained in this file.
