@@ -91,5 +91,11 @@ In order to make distance selection as fast as possible, it's implemented with a
 - `MIN_DIST` is the minimum distance spawn attempts will happen at. By default it's set to 27.
 - `MAX_DIST` is the maximum distance spawn attempts will happen at. By default it's set to 120.
 
-
 ###### Disclaimer: There is, most likely, an end to the possibilities. Crowdford is not responsible for any damages caused by actions or inactions resulting from any misinterpretations of the statements contained in this file.
+
+## Crediting
+This library is licensed under the [Apache License 2.0](https://github.com/5uso/Artificial-Natspawns/blob/main/LICENSE). When using it as part of  your own projects, you must:
+
+- Include [crediting for the library](https://github.com/5uso/Artificial-Natspawns/blob/main/NOTICE) in a way visible to players. This probably fits best into the credits section of your map/datapack in-game, but in case that's impossible it may be done within a text file or documentation distributed with the project.
+- Include a copy of the [license](https://github.com/5uso/Artificial-Natspawns/blob/main/LICENSE).
+
