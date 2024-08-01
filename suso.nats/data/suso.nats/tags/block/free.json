@@ -182,6 +182,13 @@
         "minecraft:cave_vines",
         "minecraft:air",
         "minecraft:cave_air",
-        "minecraft:void_air"
+        "minecraft:void_air",
+        "minecraft:frogspawn",
+        "minecraft:mangrove_propagule",
+        "minecraft:sculk_vein",
+        "minecraft:cherry_sapling",
+        "minecraft:pink_petals",
+        "minecraft:pitcher_plant",
+        "minecraft:torchflower"
     ]
 }
